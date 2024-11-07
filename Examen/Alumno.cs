@@ -6,7 +6,7 @@
 
         public string NumeroCuenta { get; set; }
 
-        public string Emial { get; set; }
+        public string Email { get; set; }
     }
 
 }
