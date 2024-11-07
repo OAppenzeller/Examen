@@ -39,14 +39,15 @@
             double notaFinal = CalcularNotaFinal();
             double notaFinalParametros = CalcularNotaFinal(N1, N2, N3);
 
+            Console.WriteLine(" ");
             Console.WriteLine("Alumno:" + NombreAlumno);
             Console.WriteLine("Cuenta:"+ NumeroCuenta);
             Console.WriteLine("Email:" + Email);
             Console.WriteLine("Asignatura:" + NombreAsignatura);
             Console.WriteLine("Docente:" + NombreDocente);
             Console.WriteLine("Horario:" + Horario);
-            Console.WriteLine("Nota Final (sin parametros):" + notaFinal + MensajeNotaFinal(notaFinal));
-            Console.WriteLine("Nota Final (con parametros):" + notaFinalParametros + MensajeNotaFinal(notaFinalParametros));
+            Console.WriteLine("Nota Final (sin parametros):" + notaFinal + " " + MensajeNotaFinal(notaFinal));
+            Console.WriteLine("Nota Final (con parametros):" + notaFinalParametros + " " + MensajeNotaFinal(notaFinalParametros));
 
         }
     }

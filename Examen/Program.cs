@@ -26,10 +26,35 @@ public class Program
             Console.Write("Ingrese el horario: ");
             asignatura.Horario = Console.ReadLine();
 
+            Console.Write("Ingrese la nota del primer parcial: ");
+            asignatura.N1 = int.Parse(Console.ReadLine());
+            if (asignatura.N1 > 30)
+            {
+                Console.WriteLine("La nota del primer parcial no puede ser mayor a 30");
+                return;
+            }
+
+            Console.Write("Ingrese la nota del segundo parcial: ");
+            asignatura.N2 = int.Parse(Console.ReadLine());
+            if (asignatura.N2 > 30)
+            {
+                Console.WriteLine("La nota del segundo parcial no puede ser mayor a 30");
+                return;
+            }
+
+            Console.Write("Ingrese la nota del tercer parcial: ");
+            asignatura.N3 = int.Parse(Console.ReadLine());
+            if (asignatura.N3 > 40)
+            {
+                Console.WriteLine("La nota del tercer parcial no puede ser mayor a 40");
+                return;
+            }
+
+            asignatura.Imprimir();
 
         }catch(FormatException)
         {
-            Console.WriteLine("Error de formato");
+            Console.WriteLine("Ingrese valores validos para las notas.");
         }
 
     }
